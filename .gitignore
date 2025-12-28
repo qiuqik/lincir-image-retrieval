@@ -25,7 +25,7 @@ EUFCC_CIR/data/
 # 4. 索引文件目录
 # experiment/
 # experiment/*.index
-experiment/*_index/
+# experiment/*_index/
 
 # 5. 上传文件目录
 demo_unified/uploads/
