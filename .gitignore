@@ -19,8 +19,9 @@ hf_models/
 pretrained_models/
 
 # 3. 数据集目录
-datasets/
-EUFCC_CIR/data/
+*.png
+*.jpg
+
 
 # 4. 索引文件目录
 # experiment/
@@ -36,6 +37,7 @@ demo_unified/uploads/
 # 7. MAC系统隐藏文件
 .DS_Store
 **/.DS_Store
+__MACOSX/
 
 # 8. 缓存/临时文件
 *.swp

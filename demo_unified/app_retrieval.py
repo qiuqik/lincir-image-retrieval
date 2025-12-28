@@ -32,16 +32,16 @@ app = Flask(__name__)
 # 数据集路径配置
 DATASET_PATHS = {
   'flickr8k': {
-    'index_dir': '/home/yqzheng/projects/lincir/experiment/flickr8k_index/flickr8k.index',
-    'image_root': '/home/yqzheng/projects/lincir/datasets/Flickr8k/Images'
+    'index_dir': '../experiment/flickr8k_index/flickr8k.index',
+    'image_root': '../datasets/Flickr8k/Images'
   },
   'flickr30k': {
-    'index_dir': '/home/yqzheng/projects/lincir/experiment/flickr30k_index/flickr30k.index',
-    'image_root': '/home/yqzheng/projects/lincir/datasets/Flickr30k/flickr30k-images'
+    'index_dir': '../experiment/flickr30k_index/flickr30k.index',
+    'image_root': '../datasets/Flickr30k/flickr30k-images'
   },
   'eufcc': {
-    'index_dir': '/home/yqzheng/projects/lincir/experiment/eufcc_index/eufcc.index',
-    'image_root': '/home/yqzheng/projects/lincir/EUFCC_CIR/data/test_ood/EUROPEANA/images',
+    'index_dir': '../experiment/eufcc_index/eufcc.index',
+    'image_root': '../EUFCC_CIR/data/test_ood/EUROPEANA/images',
   }
 }
 
