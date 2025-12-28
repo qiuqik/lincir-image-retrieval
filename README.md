@@ -185,13 +185,18 @@ python3 app_retrieval.py --index-dir ../experiment/eufcc_index --image-root linc
 ---
 
 
+## 🔍 关键技术点
+
+* **多数据集集成**: 通过一套 `Phi` 权重，适配了从自然场景到文化遗产的多种图像域。
+* **DeepSeek API 扩展**: 后端支持集成 DeepSeek 翻译接口，可将中文检索指令实时转化为英文以适配 CLIP 特征空间。
+* **高效检索**: 结合 FAISS 索引，在 3.1w (Flickr30k) 规模的数据下实现毫秒级响应。
+
+---
 ## 💡 核心贡献
 
 * **多语言适配潜力**：系统架构支持通过 DeepSeek/LLM 接口扩展中文指令检索。
 * **跨域泛化**：证明了在 CIRR 上训练的 Phi 模块可无缝迁移至 Flickr 和 EUFCC 文化遗产数据集。
 * **高性能索引**：采用离线特征提取 + 向量数据库，支持万级数据实时响应。
-
-根据你提供的树状结构和环境信息，我为你重新组织并优化了 **README** 的项目结构说明部分。这能帮助他人（或未来的你）快速理清各个数据集、索引与代码模块之间的关系。
 
 ---
 
@@ -295,7 +300,7 @@ python demo8k/app_flickr8k.py \
 
 ### 2. EUFCC-CIR 跨域评估 (OOD)
 
-基于 EUFCC-340K 和 `cir_db.csv` 手动构建了 `cap.eufcc.json` 进行测试。
+基于 EUFCC-340K 和 `cir_db.csv` 手动构建了 `cap.eufcc.json` 进行测试。`cap.eufcc.json` 包含 2k+ 条(reference, caption, target)的三元组。
 
 | Metric | Recall@1 | Recall@5 | Recall@10 | Recall@50 | MRR |
 | --- | --- | --- | --- | --- | --- |
@@ -303,12 +308,5 @@ python demo8k/app_flickr8k.py \
 
 ---
 
-## 🔍 关键技术点
-
-* **多数据集集成**: 通过一套 `Phi` 权重，适配了从自然场景到文化遗产的多种图像域。
-* **DeepSeek API 扩展**: 后端支持集成 DeepSeek 翻译接口，可将中文检索指令实时转化为英文以适配 CLIP 特征空间。
-* **高效检索**: 结合 FAISS 索引，在 3.1w (Flickr30k) 规模的数据下实现毫秒级响应。
-
----
 
 
