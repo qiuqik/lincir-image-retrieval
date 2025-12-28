@@ -55,7 +55,7 @@ __MACOSX/
 .project
 .classpath
 .settings/
-
+.env
 # 10. Linux系统临时文件
 .*.swp
 .swp/

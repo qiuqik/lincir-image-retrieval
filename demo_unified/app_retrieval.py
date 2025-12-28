@@ -12,6 +12,8 @@ import torch
 import numpy as np
 from PIL import Image
 import requests
+from dotenv import load_dotenv
+
 
 # 导入项目内部模块
 current_dir = Path(__file__).resolve().parent
@@ -276,9 +278,9 @@ def translate_to_english(text):
     # 检查是否包含中文字符
     if not any('\u4e00' <= char <= '\u9fff' for char in text):
         return text.strip()
-
-    api_key = "sk-20e44ae65ccb4c128564a4ecf749b4cf"
-    api_url = "https://api.deepseek.com/chat/completions"
+    load_dotenv()
+    api_key = os.getenv("API_KEY") # deepseek api
+    api_url = os.getenv("BASE_URL")
     
     headers = {
         "Content-Type": "application/json",

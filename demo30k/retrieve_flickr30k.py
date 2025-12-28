@@ -45,7 +45,7 @@ def translate_to_english(text):
     if not any('\u4e00' <= char <= '\u9fff' for char in text):
         return text
 
-    api_key = "sk-20e44ae65ccb4c128564a4ecf749b4cf"
+    api_key = "xx"
     api_url = "https://api.deepseek.com/chat/completions"
     headers = {
         "Content-Type": "application/json",
