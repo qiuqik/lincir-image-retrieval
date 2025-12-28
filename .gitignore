@@ -1,0 +1,60 @@
+# ========================== 通用Python文件过滤 ==========================
+# 编译后的字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# 项目依赖
+*.egg-info/
+dist/
+build/
+*.whl
+
+# 1. HF模型缓存目录
+hf_models/
+**/hf_models/
+
+# 2. 预训练模型目录
+pretrained_models/
+
+# 3. 数据集目录
+datasets/
+EUFCC_CIR/data/
+
+# 4. 索引文件目录
+# experiment/
+# experiment/*.index
+experiment/*_index/
+
+# 5. 上传文件目录
+demo_unified/uploads/
+
+# 6. 测试/提交目录
+# submission/
+
+# 7. MAC系统隐藏文件
+.DS_Store
+**/.DS_Store
+
+# 8. 缓存/临时文件
+*.swp
+*.swo
+/tmp/
+/temp/
+*.log
+*.tmp
+
+# 9. IDE配置文件
+.idea/
+.vscode/
+*.iml
+*.suo
+.project
+.classpath
+.settings/
+
+# 10. Linux系统临时文件
+.*.swp
+.swp/
+
