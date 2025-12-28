@@ -1,6 +1,11 @@
 
 # LinCIR-MultiRetrieval: 多数据集零样本组合图像检索系统
 
+单图检索示例：
+![LinCIR Multi-Dataset Retrieval Demo](./readme_image/PixPin_2025-12-28_14-56-39.jpg)
+文本修改检索示例：
+![LinCIR Multi-Dataset Retrieval Demo](./readme_image/PixPin_2025-12-28_14-55-36.jpg)
+
 本仓库基于 **CVPR 2024** 论文 **LinCIR (Language-only Training of Zero-shot Composed Image Retrieval)** 实现。通过 Language-only 训练得到的组合网络（Phi），实现了在不需要成对（Image-Text-Image）训练数据的情况下，进行高质量的组合图像检索。
 
 本项目集成了 **Flickr8k**, **Flickr30k**, 以及 **EUFCC-CIR** (欧洲文化遗产数据集) 的索引构建、检索评估与 Web 可视化。
