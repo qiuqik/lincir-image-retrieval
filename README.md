@@ -288,7 +288,7 @@ python demo8k/app_flickr8k.py \
 
 ## 📊 实验评估结果 (Evaluation Results)
 
-项目在通用场景（CIRR）与专业领域（EUFCC）均展现了强大的零样本泛化能力。
+项目在通用场景（CIRR）与专业领域（EUFCC）均进行了评估实验。
 
 ### 1. CIRR 基准测试
 
